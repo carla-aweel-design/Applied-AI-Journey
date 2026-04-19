@@ -4,15 +4,15 @@ print("--- IU Grade Goal Tracker---")
 
 # getting user input
 module_name = input("enter the module name (e.g.,python, math): ")
-current_points = float(inout("How many points do you have so far? (0-50): "))
-target_grade = float(input(" What is your targeted total points?   (e.g., 90 for an A): "))
+current_points = float(input("How many points do you have so far? (0-50): "))
+target_points = float(input(" What is your targeted total points?   (e.g., 90 for an A): "))
 
 #basic logic to find the gap
-needed_points = target_points - current points
-print("\n--- Results  for " + moudule_name + ".....")
-if needed points <= 0 :
+needed_points = target_points - current_points
+print("\n--- Results  for " + module_name + ".....")
+if needed_points <= 0 :
   print("Good! you reached your goal!")
-elif needed_points > 50 :
+elif needed_points < 50 :
   print(" goal is very close! You still need " + str(needed_points) + " points more, You got it!" )
 else:
   print(" keep pushing you got it!")
